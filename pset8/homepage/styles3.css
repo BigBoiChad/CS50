@@ -1,0 +1,34 @@
+.headtitle2
+{
+    background-color: #2F4F4F;
+    color: #fff;
+    margin-bottom: 3rem;
+    padding: 12rem 6rem;
+    text-align: center;
+}
+
+.timeline
+{
+    font-family: 'Sofia';
+    font-size: 2rem;
+    color: black;
+}
+
+.edu-info
+{
+    font-family: Times New Roman;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.schools
+{
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+#us
+{
+    background-color: white;
+}

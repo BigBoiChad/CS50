@@ -1,0 +1,338 @@
+.brand
+{
+    font-family:Brush Script MT;
+    font-style: normal;
+    font-weight: 600;
+    font-variant: normal;
+    font-size: 500%;
+    text-align: left;
+    line-height: 1;
+    min-height: 1rem;
+    color: black;
+    transition: 0.6s;
+}
+
+.brand:hover
+{
+    color: green;
+    background-color: transparent;
+
+}
+
+.top-banner
+{
+    font-family: Georgia;
+    font-weight: bolder;
+    font-size: 100%;
+    text-align: center;
+    color: white;
+    line-height: 2;
+    min-height: 2rem;
+    background-color: black;
+
+}
+
+#basic-info
+{
+  background-color: #FAEBD7;
+  color: green;
+
+}
+
+#interests
+{
+  background-color: #F0F8FF;
+  color: blue;
+}
+
+#education
+{
+  background-color: #FFF8DC;
+  color: purple;
+}
+
+#skills
+{
+  background-color:#E0FFFF;
+  color: black;
+
+}
+
+#contact
+{
+  background-color:  #7FFFD4;
+  color: red;
+}
+
+#search
+{
+    background-color: #d9edff;
+}
+
+button, input[type="click"]
+{
+    border: 2px solid transparent;
+    border-radius: 400px;
+    line-height: 1;
+    padding: 0.375rem 0.75rem;
+    text-align: right;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.jumplink
+{
+    font-family: Brush Script MT;
+    font-style: normal;
+    font-weight: 300;
+    font-variant: normal;
+    font-size: 200%;
+    line-height: 1;
+    min-height: 1rem;
+    color: black;
+}
+
+.skills
+{
+    color: black;
+}
+
+
+
+body
+{
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('homepage11.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+
+.content1
+{
+    font-family: 'Sofia';
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+}
+
+.subtitle
+{
+    font-family: 'Aclonica';
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3;
+    color: black;
+}
+
+.reference
+{
+    color: red;
+    transition: 0.6s;
+}
+
+#about-contact
+{
+    text-align: right;
+}
+
+footer
+{
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bolder;
+    font-variant: normal;
+    font-size: 100%;
+    text-align: center;
+    color: white;
+    line-height: 2;
+    min-height: 2rem;
+    background-color: black;
+}
+
+
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.wechat
+{
+    color: green;
+    background-color: transparent;
+}
+
+.wechat:hover {
+
+  color: black;
+  background-color: transparent;
+  transition: 0.6s;
+
+}
+
+
+.insta
+{
+    color: pink;
+    background-color: transparent;
+}
+
+.insta:hover {
+
+  color: white;
+  background-color: transparent;
+  transition: 0.6s;
+
+}
+
+
+.linkedin
+{
+    color: red;
+    background-color: transparent;
+    
+}
+
+.linkedin:hover
+{
+
+  color: blue;
+  background-color: transparent;
+  transition: 0.6s;
+
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  font-family:'Sofia';
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: #555;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 180px;
+  text-align: center
+
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  color: purple;
+  opacity: 1;
+}
+
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {background-color: #04AA6D;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+
+.likes:visited
+{
+    color: white;
+    background-color: transparent;
+}
+
+.likes:hover
+{
+
+  color: red;
+  background-color: transparent;
+  transition: 0.6s;
+
+}

@@ -1,0 +1,74 @@
+.headtitle
+{
+    background-color: black;
+    color: #fff;
+    margin-bottom: 3rem;
+    padding: 12rem 6rem;
+    text-align: center;
+}
+
+
+#background2
+{
+     background-image: none;
+}
+
+#school1
+{
+    background-color: white;
+}
+
+#school2
+
+{
+   background-color: white;
+}
+
+#china
+{
+    background-color: white;
+}
+
+.container
+{
+    margin-left: 100;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.section
+{
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.section:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.file
+{
+    color: red;
+    background-color: transparent;
+}
+
+.file:hover
+{
+    color: green;
+    background-color: transparent;
+    transition: 0.6s;
+}
+
+.home
+{
+    color: red;
+    background-color: transparent;
+}
+
+.home:hover
+{
+    color: green;
+    background-color: transparent;
+    transition: 1s;
+}

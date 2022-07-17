@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="styles2.css" rel="stylesheet">
+        <link href="styles3.css" rel="stylesheet">
+
+
+        <script src="movement2.js"></script>
+        <script src="movement3.js"></script>
+        <title>Education</title>
+    </header>
+
+    <body id = "background2">
+        <div class = "headtitle2">
+            <h1 class = 'brand' style = "color: white;">E.d.u.c.a.t.i.o.n
+            <a href = "https://ide-4abb0aceb7654f43a68d659fa19c36a6-8080.cs50.ws/homepage/index.html" class = "home"><i style="font-size:48px" class="fa">&#xf015;</i></a>
+            <button id = "button1" class = "schools"><img src= "NU.png" alt= "NU" style="width:100px;height:100px";></button>
+            <button id = "button2" class = "schools"><img src= "HUC.jpg" alt= "HUC" style="width:100px;height:100px";></button>
+            </h1>
+        </div>
+
+        <div class="container">
+            <img src= "NU.png" alt= "NU" style="float:right;width:200px;height:200px";>
+            <div class="section" id = "master">
+                <h2 class ='subtitle' >Master in Computer Science</h2>
+                <h3 class = "timeline">
+                    Sep, 2022 - Now
+                    <button id = "us"><img src= "US.svg.png" alt= "US" style="width:50px;height:30px"; ></button></h3>
+                <hr>
+                <ul class = "edu-info">
+                    <li>Through a cohort-based learning model, the Align Master of Science in Computer Science (MSCS) provides a supportive community of engaged peers. Academic bridge courses prepare students of any undergraduate discipline for graduate level coursework that includes program design, computer systems, and software development—as well as a range of electives that allow you to tailor the degree to your personal and professional goals.</li>
+                    <li>Align is built on a core belief that computer and data science are for everyone, regardless of background. Align provides a direct pathway to a MS in data science or computer science for students from all undergraduate backgrounds – no prior experience is required.</li>
+                    <li>Align MS in CS graduates find success in a wide range of careers, including: Software Engineer at American Express Systems and Infrastructure Engineer at LinkedIn, Network Engineer at Cisco,Mobile App Developer at Bose,Software Engineer at Facebook,Software Developer at Amazon</li>
+                </ul>
+                <p align="center"><iframe width="820" height="415" src="https://www.youtube.com/embed/zJAOtGUAKYY"> </iframe></p>
+            </div>
+
+            <img src= "HUC.jpg" alt= "HUC" style="float:right;width:200px;height:200px";>
+            <div class="section" id = "bachelor" >
+                <h2 class ='subtitle' >BSc Economics in Investment</h2>
+                <h3 class = "timeline">
+                    Sep, 2018 - June, 2022
+                    <button id = "china"><img src= "People'sRepublicofChina.svg.png" alt= "China" style="width:50px;height:30px"; ></button>
+                </h3>
+                <hr>
+                <ul class = "edu-info">
+                    <li>GPA : 3.65 / 4; GMAT: 730 / 750</li>
+                    <li>The BSc Major in economics emphasizes the mathematical and quantitative nature of modern economic inquiry that is increasingly required for progress on to graduate studies in economics or to careers in quantitative economic and financial analysis in the public and private sectors.</li>
+                    <li>Awarded scholarships twice for ranked 2nd in a class of 41 based on academic merit.</li>
+                    <li>Scored A in 22/23 business-related courses, including Investment and Corporate Finance, and 7/8quantitative courses including Probability and Statistics.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+            <button class="open-button" onclick="openForm()">Chat With Me</button>
+
+            <div class="chat-popup" id="myForm">
+                <form action="https://ide-4abb0aceb7654f43a68d659fa19c36a6-8080.cs50.ws/homepage/Education.html" onsubmit="alert('Thanks for Your Message!');" class="form-container">
+                    <h1>Chat With Me</h1>
+
+                    <label for="msg"><b>Message</b></label>
+                    <textarea placeholder="Leave a Message here..." name="msg" required></textarea>
+
+                    <button type="submit" class="btn">Send it</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close it</button>
+                </form>
+            </div>
+        <script>
+
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+        </script>
+
+        <footer>
+            <p>Alexander tsao is optimized for self-training. Examples might be simplified to improve reading and learning. References, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using thie page, you agree to have read and accepted our terms of use, cookie and privacy policy.</p>
+            Copyright &#169; Alexander Tsao
+            <p></p>
+            <img src = "footer.png" alt = "icon" style="float:center">
+        </footer>
+    </body>
+</html>

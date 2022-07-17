@@ -1,0 +1,32 @@
+.headtitle3
+{
+    background-color: Tomato;
+    color: #fff;
+    margin-bottom: 3rem;
+    padding: 12rem 6rem;
+    text-align: center;
+}
+
+.interests
+{
+    color: white;
+}
+
+.interests:hover
+{
+    color: black;
+}
+
+.albumpic
+{
+    width: 200px;
+    height: 200px;
+}
+
+.tvshowpic
+{
+    width: 300px;
+    height: 200px;
+}
+
+
