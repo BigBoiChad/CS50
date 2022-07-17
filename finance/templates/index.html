@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <h3 style = "text-align: left;" > Avilable Stocks Owned: </h1>
+    <table>
+        <theade>
+        <tr>
+
+            <th> Symbol </th>
+            <th> Company Name </th>
+            <th> Shares </th>
+            <th> Price </th>
+            <th> TOTAL </th>
+
+        </tr>
+        </theade>
+
+        <tbody>
+
+            {% for own in owns %}
+            <tr>
+                <td> {{ own.symbol}} </td>
+                <td> {{ own.company_name }}</td>
+                <td> {{ own.shares }}</td>
+                <td> {{ own.price }}</td>
+                <td> {{ own.total_price }}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td> CASH </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> {{ cash }}</td>
+            </tr>
+
+        </tbody>
+    </table>
+    {% if result == 'profit' %}
+        <h4 style = "text-align: right; color: green;">Profits: {{ profits }}</h4>
+        <h4 style = "text-align: right; color: green;">Return rate:  +{{ ratio }}%</h4>
+    {% elif  result == 'even' %}
+        <h4 style = "text-align: right;">Profits: {{ profits }}</h4>
+        <h4 style = "text-align: right;">Return rate: {{ ratio }}%</h4>
+    {% else %}
+        <h4 style = "text-align: right; color: red;">Profits: {{ profits }}</h4>
+        <h4 style = "text-align: right;color: red;">Return rate:  -{{ ratio }}%</h4>
+    {% endif %}
+    <h4 style = "text-align: right;">Total Asset: {{ balance }}</h4>
+
+    <h4 style = "text-align: center;">Wants More Cash ? </h4>
+    <form action = "/" method = "post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="cash_add" placeholder="Cash$$$" type="number" min = 1>
+            <button class="btn btn-primary" type="submit" >CASH ADD</button>
+        </div>
+    </form>
+
+
+{% endblock %}

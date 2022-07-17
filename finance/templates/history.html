@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <h3 style = "text-align: center;" > Transaction History </h1>
+    <table>
+        <theade>
+        <tr>
+
+            <th> Symbol </th>
+            <th> Company Name </th>
+            <th> Shares </th>
+            <th> Price </th>
+            <th> Type </th>
+            <th> Total </th>
+            <th> TIME </th>
+        </tr>
+        </theade>
+
+        <tbody>
+            {% for history in historys %}
+            <tr>
+                <td> {{ history.symbol}} </td>
+                <td> {{ history.company_name }}</td>
+                <td> {{ history.shares }}</td>
+                <td> {{ history.price }}</td>
+                <td> {{ history.type}} </td>
+                {% if history.type == "BUY" %}
+                    <td> - {{ history.total_price }}</td>
+                {% else: %}
+                    <td> + {{ history.total_price }}</td>
+                {% endif %}
+
+                <td>  {{ history.time }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <h1> Avilable Amount of Cash: {{ cash }}</h1>
+    <form action = "/buy" method = "post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Stock Symbol" type="text">
+            <input autocomplete="off" autofocus class="form-control" name="shares" placeholder="Shares" type="text">
+            <button class="btn btn-primary" type="submit" style = "background-color: Green;">Buy </button>
+        </div>
+    </form>
+    <h1> Avilable Stocks Owned </h1>
+    <table>
+        <theade>
+        <tr>
+            <th> Company Name </th>
+            <th> Symbol </th>
+            <th> Shares </th>
+            <th> Stock Latest Price</th>
+
+        </tr>
+        </theade>
+
+        <tbody>
+            {% for owned_stock in owned_stocks %}
+            <tr>
+                <td> {{ owned_stock.company_name }}</td>
+                <td> {{ owned_stock.symbol}} </td>
+                <td> {{ owned_stock.shares }}</td>
+                <td> {{ owned_stock.price }} $</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

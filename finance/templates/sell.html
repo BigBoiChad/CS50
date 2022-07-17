@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <h4 style = "text-align: left;" > Avilable List of Stocks <h4>
+        <ul>
+            {% for stock in stocks %}
+                <li style = "text-align: left;"> {{ stock }}</li>
+            {% endfor %}
+        </ul>
+
+    <form action = "/sell" method = "post">
+        <div class="form-group">
+            <select name = 'symbol' class="form-control" >
+                <option disabled selected value = "">STOCKS</option>
+                {% for stock in stocks %}
+                    <option value = "{{ stock }}">{{ stock }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="shares" placeholder="Shares" type="number" >
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit" style = "background-color: red;">Sell</button>
+        </div>
+
+    </form>
+
+    <h4 style = "text-align: center;" > Avilable Stocks Owned: </h1>
+    <table>
+        <theade>
+        <tr>
+            <th> Symbol </th>
+            <th> Company Name </th>
+            <th> Shares </th>
+            <th> Price </th>
+            <th> TOTAL </th>
+
+        </tr>
+        </theade>
+
+        <tbody>
+
+            {% for own in owns %}
+            <tr>
+                <td> {{ own.symbol}} </td>
+                <td> {{ own.company_name }}</td>
+                <td> {{ own.shares }}</td>
+                <td> {{ own.price }}</td>
+                <td> {{ own.total_price }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
