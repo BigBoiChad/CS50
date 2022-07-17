@@ -1,0 +1,12 @@
+sort1 uses: Bubble sort
+
+How do you know?: this sort take the advantage of a sorted number thus reduce the running time drastically when the list is sorted
+
+sort2 uses: Merge sort
+
+How do you know?: 1)the runing time is much less than the others. 2)the running time for random list is the same as that for a sorted list 
+
+sort3 uses: Selection sort
+
+How do you know?: the running time is more than that of the merge sort and it does not take advantage from the sorted list.
+
